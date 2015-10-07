@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="system" method="upgrade">
+    <name>Facebook Conversion Tracking Pixel</name>
+    <author>Pablo Arias</author>
+    <creationDate>September 2015</creationDate>
+    <copyright>(C) Pablo Arias, 2015. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <authorEmail>correo@pabloarias.eu</authorEmail>
+    <authorUrl>http://www.pabloarias.eu</authorUrl>
+    <version>0.1</version>
+    <description>PLG_FBCTP_DESC</description>
+    <files>
+        <filename plugin="facebookconversionpixel">facebookconversionpixel.php</filename>
+        <filename>index.html</filename>
+        <folder>language</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_facebookconversionpixel.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_facebookconversionpixel.sys.ini</language>
+        <language tag="es-ES">language/es-ES/es-ES.plg_system_facebookconversionpixel.ini</language>
+        <language tag="es-ES">language/es-ES/es-ES.plg_system_facebookconversionpixel.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="pixelid"
+                    type="text"
+                    label="PLG_FBCTP_PIXELID_LABEL"
+                    description="PLG_FBCTP_PIXELID_DESC"
+                />
+                <field
+                    name="conversionmenuitem"
+                    type="menuitem"
+                    default="101"
+                    label="PLG_FBCTP_CONVERSION_MENU_ITEM_LABEL"
+                    description="PLG_FBCTP_CONVERSION_MENU_ITEM_DESC"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
