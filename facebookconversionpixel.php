@@ -18,8 +18,7 @@ class PlgSystemFacebookconversionpixel extends JPlugin
         $this->app = JFactory::getApplication();
     }
 
-    function onBeforeCompileHead()
-    {
+    function onBeforeCompileHead() {
         $doc = JFactory::getDocument();
         if ($this->app->isSite()) {
             $doc->addScriptDeclaration('
@@ -39,7 +38,7 @@ class PlgSystemFacebookconversionpixel extends JPlugin
             }
         }
     }
-    
+
     function onAfterRender() {
         if ($this->app->isSite()) {
             $content = $this->app->getBody();
